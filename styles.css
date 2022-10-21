@@ -1,0 +1,68 @@
+body {
+    background: rgb(167, 236, 255);
+    padding-top: 10px;
+}
+.container {
+    padding: 30px;
+}
+.one {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+div {
+    position: relative;
+    background: #FFFFFF;
+    width: 90%;
+    max-width: 500px;
+    padding: 2em;
+    margin: 1.5em auto;
+    border: 3px solid rgba(0, 0, 0, 0.08);
+}
+h3 {
+    font-size: 3vw;
+    letter-spacing: 2px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(60, 60, 60);
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+}
+
+@media (max-width: 980px) {
+    h3 {
+        font-size: 20px;
+        letter-spacing: 1px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        font-weight: bold;
+        line-height: 1;
+        margin: 0;
+    }
+    .rainbow-power {
+        animation: BackgroundAnimated 50s linear infinite;
+    }
+}
+
+.rainbow-power {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/191814/gilbertbakeroriginalcolors_copy.jpg");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    overflow: hidden;
+    text-align: center;
+    color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    animation: BackgroundAnimated 40s linear infinite;
+}
+
+@keyframes BackgroundAnimated {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
